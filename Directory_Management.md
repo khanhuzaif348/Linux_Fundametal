@@ -1,4 +1,4 @@
-#**Directory MAnagement**]
+# **Directory MAnagement**
 
 **Root Directorry(\)**
 
@@ -19,7 +19,7 @@
 
 **Relative path** :  Specifies the path to a file or directory relative to the current directory you are in . It does not begins with /.
  
-#**Directory Management - Commands** 
+# **Directory Management - Commands** 
 
 
 **ls directoryName** - This will display list of files or sub-directory present in directory .
