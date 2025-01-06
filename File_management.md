@@ -6,7 +6,7 @@
 
 3 - **ls-I**   Thios will list of all files and dir with additional details like file type , size , owner,permission etc
 
-4 - **ls-a ** - This will list down of ALL  the hidden files in current directory.
+4 - **ls-a** - This will list down of ALL  the hidden files in current directory.
 
 5 - **vi file name**   - display  thee contents of filename.
 
