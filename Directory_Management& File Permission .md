@@ -35,4 +35,37 @@
 **cd dirName** - This will change the dir of the current working console.
 
 **cd ..** - This will change the current dir to immediate parent Dir . 
+
+
+
+
+
+
+
+
+
+# **File Permission : UNderstanding file permissions** 
+
+Permission are devided into 3 categories .
+
+**Read(r)** : Only view contents
+
+**write(w)** : allows the user modify the contents of the file .
+
+**Execute(x)** : Allows the user to execute the file .
+
+
+These permission devidde three groups of user :
+
+
+
+**Owner** : The user who owns the file or Dir.
+
+**group** : A group of users who share common  permission for the file .
+
+**Others** : All other users who are not the owner or in the group .
+
+
+
+
 									
