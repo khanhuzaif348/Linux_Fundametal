@@ -66,6 +66,115 @@ These permission devidde three groups of user :
 **Others** : All other users who are not the owner or in the group .
 
 
+File Permission Representation 
+
+The first charcter indicate the file type:
+
+. for a regular file
+d for a directory 
+| for a symbolic link 
+
+
+The next nine characters represent the permission for the owner , group , and Others.
+Owner Permission : First 3 character like rwx : - Owner has read , write , and execute permission .
+
+Group permission : (Next three chracter) : like : r-x means the group has read , not write , execute 
+
+Other permission : - like r-- maens others can read file but not another permission for other 
+
+
+
+changing File Permission 
+
+chmod(Change Mode) 
+CHange the user permission  . These 2 type 
+Symbolic Mode : - Specifies permissions using letters (r,w,x) and Operator (+,-,=).
+
+Example : chmod u+x file.txt - adds execute permission for the owner (u stands for user/owner).
+Example : chmod go-w file.txt - removes write permisssion from group and others (g for group , o for Others)
+
+Numeric Mode : Permission  are represented as a three digit number .
+
+Example : chmod 755 file.txt -  grant  rwx(7) to the owner,rx(5) to the group , and rx(5) to others.
+
+7  rwx      4    r--        1 x 
+
+6  rw-       3  wx           0 ---
+
+5 r-x        2  w-
+
+
+
+
+
+Pipe  & Filter
+
+A pipe is a special operator (|) in Linux thst allows you to connaect the output of one command to the input of another .
+
+It enables the o/p from one program to be used as the input bfor another 
+   ,creating pipeline of commands . 
+   
+pipes are useful for chaining multiple commands together in a single line , making it easier to perform complex tasks .
+
+**Filter :** 
+
+A filter is a command that process input data and produces Output  Filters takes data from  standerd input(stdin),
+Perform operation on it  .
+and send the result to standerd o/t (stdout) .
+FIlters are commonly used in combinationb with pipes to process and transform data . 
+
+**Few common filter as below** 
+
+
+**grep**  -   searches for patterns in text .
+
+**uniq**  -   Removes duplicate lines from sorted data .
+
+**awk**   -   A powerfull text processing tool .
+
+**sort**  -   Sorts Data .
+
+**sed**   -  A stream editor used for text transformations.
+
+**cut**   -  Extracts specific columns from input 
+
+**tr**     - Translate or deletes characters .
+
+**pipes   : Chaining of cmd** 
+
+pipes allows you to combine multiple cmd together ,
+For Example yuo can filter the result of one cmd using another command without needing to store intermediate data in  files .
+
+Eg 1 : Using grep with a pipe  :            **ps aux | grep firefox**
+
+Eg 2 :  Using ls and sort with a pipe :     **ls -l |sort -k 5 -n**
+
+Eg 3 : COmbining cat ,grep ,and sort :      **cat file.txt |grep'error' | sort**
+
+Eg 4 : Using ps ,grep ,and awk with pipes : **ps aux | grep 'python' |awk'{print $1,$3,$11}'**
+
+Eg 5 : Redirecting output to a file :       **ps aux |grep 'python'>python_process.txt**
+
+Eg 6 : Appending output to a file :         **ps aux |grep 'python'>>python_process.txt**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 									
