@@ -84,18 +84,20 @@ Other permission : - like r-- maens others can read file but not another permiss
 
 
 
-changing File Permission 
+ # **changing File Permission** 
 
 chmod(Change Mode) 
+
 CHange the user permission  . These 2 type 
+
 Symbolic Mode : - Specifies permissions using letters (r,w,x) and Operator (+,-,=).
 
-Example : chmod u+x file.txt - adds execute permission for the owner (u stands for user/owner).
+Example : **chmod u+x file.txt** - adds execute permission for the owner (u stands for user/owner).
 Example : chmod go-w file.txt - removes write permisssion from group and others (g for group , o for Others)
 
-Numeric Mode : Permission  are represented as a three digit number .
+**Numeric Mode** : Permission  are represented as a three digit number .
 
-Example : chmod 755 file.txt -  grant  rwx(7) to the owner,rx(5) to the group , and rx(5) to others.
+**Example :** chmod 755 file.txt -  grant  rwx(7) to the owner,rx(5) to the group , and rx(5) to others.
 
 7  rwx      4    r--        1 x 
 
@@ -106,8 +108,8 @@ Example : chmod 755 file.txt -  grant  rwx(7) to the owner,rx(5) to the group , 
 
 
 
+# **Pipe  & Filter** 
 
-Pipe  & Filter
 
 A pipe is a special operator (|) in Linux thst allows you to connaect the output of one command to the input of another .
 
@@ -140,7 +142,8 @@ FIlters are commonly used in combinationb with pipes to process and transform da
 
 **tr**     - Translate or deletes characters .
 
-**pipes   : Chaining of cmd** 
+
+# **pipes   : Chaining of cmd** 
 
 pipes allows you to combine multiple cmd together ,
 For Example yuo can filter the result of one cmd using another command without needing to store intermediate data in  files .
