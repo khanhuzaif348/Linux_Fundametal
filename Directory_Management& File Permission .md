@@ -161,6 +161,36 @@ Eg 5 : Redirecting output to a file :       **ps aux |grep 'python'>python_proce
 Eg 6 : Appending output to a file :         **ps aux |grep 'python'>>python_process.txt**
 
 
+# **Process**
+
+**In Linux , System processes are managed using various commands that help you view , monitor,and control the running processes on your system . Here are some useful commands  for manageing system processes .**
+
+**ps(Process status) :** Display running in current procerss . 
+
+    ps - shows processes running in the current shell. 
+    ps aux - Lists all  processes running on the system (regardless of the user).
+    ps -ef   - Displays all proceses with detailed information .
+    ps aux | grep <process_name> -Searches for a specific process by name 
+
+    
+top :  Displays a dynamic ,real time view of system process.
+htop : showing system processes in a graphical interfacce .
+pgrep : finds the process IDs (PIDs) of processes matching a given name or other criteria .
+kill : Terminates a process by sending to it .
+killall : kills proceses by name instead of byb PID .
+nice : Statrs a process with a specific priority.
+renice : Changes the priority of and already running process .
+
+Isof : Displays a list of all open files and the processes that opened them .
+strace : Traces system calls and signals of a process . 
+uptime : Shows how long the system has been running , along with the load averages(system load)
+free : Displays memory usage information , useful for monitoring processes that may be consuming lage amounts of memory .
+
+
+
+
+
+
 
 
 
