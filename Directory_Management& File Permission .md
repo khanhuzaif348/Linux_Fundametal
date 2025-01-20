@@ -189,6 +189,43 @@ free : Displays memory usage information , useful for monitoring processes that 
 
 
 
+NETWORK UTILITIES :
+
+In Linux , several utilities help mamnage , monitor and troubleshoot  network communication These tools can be connctivty , configure network  interface ,views network statistics and diagnose network iSSUES , Below is alist of comman used network communication utilits .
+
+
+ping : Tests network route packaets take to a destination host , showing the path through intermediate routers.
+
+traceroute : TRaces the route packets take to a destination host ,showing the path through .
+
+ifconfig : Display the network interface , including IP Address ,subnet mask , h/w (MAC) address.
+
+netstat : Displays N/W connections ,routing tables , Interface statistics and more .
+
+ss: A utility to investigate sockets , It faster and more feature_rich than 'neststat'.
+
+nslookup : Queries DNS  to obtain domain name or IP Address mapping .
+dig : A more flexible and detailed DNS query tool,providing answer to DNS queries in a more readable format .
+curl: Transfer data from or to a server uisng various protocols (HTTP. FTP ,etc).It is often used to interact with APIs or to download files . 
+
+nmap: A powerful N/W scanning tool that can discover hosts and services on a computer N/W.
+route : Used to view or modify thw IP routing table.
+tcpdump: A network  packet analyzer that captures and inspects the traffic on a  N/W interface.
+mtr : A n/W diagnostic tool that combines the functionality of 'ping' and 'traceroute',providing real -time information about packet loss and latency . 
+
+arp (Address Resolution Protocol) : Displays and manipulate the ARP cache , which maps IP Address to MAC Address .
+
+nc : A versatile networking tool used for reading from  and writing to a N/W connections using TCP or UDP . often referred to as a "Swiss army knife " for networking 
+
+wget : A command-line utility to download files from the web . 
+
+  
+
+
+
+
+
+
 
 
 
