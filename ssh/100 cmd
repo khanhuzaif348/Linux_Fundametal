@@ -1,0 +1,2 @@
+rpm -qa : - to showallml installed app 
+or dnf list installed  - list all installed apps on system 
